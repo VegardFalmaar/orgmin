@@ -17,6 +17,10 @@ Interface:
 - The ``MinimizationHistory`` class is an object which contains the results
   obtained during minimization (see README.md or run
   `help(orgmin.MinimizationHistory)`).
+- The ``ComputeDB`` class provides functionality for saving results of costly
+  computations in a database to avoid repeating the calculations (see README.md
+  or run `help(orgmin.ComputeDB)`).
 """
 from ._catalogue import Parameters, expand_registry, csv_to_html
 from ._history import TargetWrapper, MinimizationHistory
+from ._compute_database import ComputeDB
